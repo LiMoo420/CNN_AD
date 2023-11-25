@@ -96,7 +96,16 @@ def train_model(model:nn.Module, train_loader, val_loader, epochs, learning_rate
             loss = criterion(outputs, targets)          # Calculate the loss
             loss.backward()             # Perform backpropagation to calculate the gradient
             optimizer.step()            # Update model parameters according to gradient
-        
+            
+        current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        if epoch == 0:
+            with open('out/val_loss.txt', 'w') as file:
+                pass
+        with open('out/val_loss.txt', 'a') as file:
+            if file.tell() == 0:
+                file.write(f'File Creation Time: {current_time}\n')
+            file.write(str(loss) + "\n")
+
         validate_model(model, val_loader, device, epoch)       # Verify after each cycle
 
 #==============================================================================

@@ -52,7 +52,7 @@ full_connection_neurons = 512
 dropout = 0.2
 learning_rate = 0.0001
 batch_size = 8
-epoch = 10
+epoch = 15
 optimizer = 'Adam'
 activation = 'relu'
 if_plot = True
@@ -131,6 +131,10 @@ print(f'Accuracy: {accuracy * 100:.2f}%')
 print('Confusion Matrix:')
 print(conf_matrix)
 
-np.savetxt('out/confusion_matrix.txt', conf_matrix, fmt = '%d')
+with open('out/confusion_matrix.txt', 'w') as f:
+    if f.tell() == 0:
+        f.write(f'File Creation Time: {current_time}\n')
+    f.write(str(conf_matrix))
+#np.savetxt('out/confusion_matrix.txt', conf_matrix, fmt = '%d')
 
 print(summary(model, input_size = (1,128,128)))
