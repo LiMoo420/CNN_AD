@@ -13,6 +13,7 @@ from method.cnn import CustomCNN, train_model, predict_model
 from method.io import load_data
 from torch.utils.data import DataLoader, TensorDataset
 from sklearn.metrics import accuracy_score, confusion_matrix
+from torchsummary import summary
 import datetime
 import random
 import torch
@@ -131,3 +132,5 @@ print('Confusion Matrix:')
 print(conf_matrix)
 
 np.savetxt('out/confusion_matrix.txt', conf_matrix, fmt = '%d')
+
+print(summary(model, input_size = (1,128,128)))

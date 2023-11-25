@@ -1,11 +1,11 @@
-File Creation Time: 2023-11-22 19:14:44
-The 0 epoch Validation Accuracy: 59.78%
-The 1 epoch Validation Accuracy: 55.09%
-The 2 epoch Validation Accuracy: 63.54%
-The 3 epoch Validation Accuracy: 65.73%
-The 4 epoch Validation Accuracy: 75.12%
-The 5 epoch Validation Accuracy: 80.28%
-The 6 epoch Validation Accuracy: 85.45%
-The 7 epoch Validation Accuracy: 86.54%
-The 8 epoch Validation Accuracy: 93.11%
-The 9 epoch Validation Accuracy: 93.27%
+File Creation Time: 2023-11-25 11:55:57
+The 0 epoch Validation Accuracy: 54.93%
+The 1 epoch Validation Accuracy: 59.15%
+The 2 epoch Validation Accuracy: 63.85%
+The 3 epoch Validation Accuracy: 70.58%
+The 4 epoch Validation Accuracy: 69.95%
+The 5 epoch Validation Accuracy: 75.12%
+The 6 epoch Validation Accuracy: 81.38%
+The 7 epoch Validation Accuracy: 87.64%
+The 8 epoch Validation Accuracy: 89.67%
+The 9 epoch Validation Accuracy: 94.21%
