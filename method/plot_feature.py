@@ -1,3 +1,14 @@
+'''
+# Plot the first convolutional layer image feature output of the convolutional neural network.
+
+# Author: Bo Yin[MC36455*] & Zihan Xue[MC36588*]
+# Contact: mc36455@um.edu.mo For Mr.Bo Yin
+#          mc36588@um.edu.mo For Ms.Zihan Xue
+'''
+
+#==============================================================================
+
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
