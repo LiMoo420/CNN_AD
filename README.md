@@ -8,7 +8,7 @@ mc36588@um.edu.mo For Ms.Zihan Xue
 
 ## Github
 
-You could find the whole project in Github: [https://github.com/LiMoo420/CNN_AD.git]([https://github.com/LiMoo420/CNN_AD.git]())
+You could find the whole project in Github: [https://github.com/LiMoo420/CNN_AD.git](https://github.com/LiMoo420/CNN_AD.git)
 
 ## Abstract
 
