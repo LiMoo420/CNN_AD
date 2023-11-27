@@ -6,6 +6,10 @@ mc36455@um.edu.mo For Mr.Bo Yin
 
 mc36588@um.edu.mo For Ms.Zihan Xue
 
+## Github
+
+You could find the whole project in Github: https://github.com/LiMoo420/CNN_AD.git
+
 ## Abstract
 
 Alzheimer's disease is one of the well-known causes of death in the elderly. Conventional methods are difficult to diagnose the disease at an early stage. Machine learning methods are one of the best options for improving diagnostic accuracy and performance. The heterogeneous dimensions and structure among disease data complicate the diagnostic process. Therefore, appropriate features are needed to address this complexity. In this study, the proposed method is introduced in two main steps.
