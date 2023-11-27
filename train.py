@@ -32,8 +32,8 @@ def extract_values_labels(data_list):
 #==============================================================================
 # Split filefolders
 
-raw_data_path = 'raw_data'
-processed_data_path = 'processed_data'
+raw_data_path = 'raw_data'      # where "raw_data" folder is
+processed_data_path = 'processed_data'      # where "processed_data" folder is
 random_seed = 420
 train_ratio, test_ratio, validation_ratio = (0.8, 0.1, 0.1)
 split_ratio = [train_ratio, test_ratio, validation_ratio]
