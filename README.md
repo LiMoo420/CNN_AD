@@ -30,9 +30,23 @@ pillow==9.3.0
 
 numpy==1.24.1
 
+pandas==2.1.2
+
+seaborn==0.13.0
+
 split-folders==0.5.1
 
 scikit-learn==1.3.2
+
+plotly==5.18.0
+
+scipy==1.11.3
+
+xgboost==2.0.2
+
+catboost==1.2.2
+
+lightgbm==3.3.5
 
 ## Construction
 
