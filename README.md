@@ -20,6 +20,12 @@ Then, this project defines a more complex convolutional neural network to prepro
 
 The results showed that the convolutional neural network had the highest accuracy for the four pathological classifications while obtaining the lowest loss values. At the same time, the sensitivity and specific sensitivity for all cases also confirmed that the method was reliable in the early diagnosis of AD, with less error when detecting the normal state.
 
+## Data Source
+
+All the  data came from ADNI website (https://adni.loni.usc.edu/).
+
+But in order to run the program, we have packaged all the data sets, including the image data set and the clinical data set. The image data is stored in the raw_data folder, the clinical text data is stored in the alzheimer.csv file, and all paths in the code are relative paths.
+
 ## Environmental requirements
 
 python==3.10.9
