@@ -33,7 +33,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # 为了使用 RandomizedSearchCV，我们需要将 PyTorch 模型封装为一个 scikit-learn 兼容的估计器
 class SkorchWrapper(NeuralNetClassifier):
-    def __init__(self, criterion=torch.nn.CrossEntropyLoss, **kwargs):
+    def __init__(self, criterion = torch.nn.CrossEntropyLoss, **kwargs):
         super(SkorchWrapper, self).__init__(
             module = CustomCNN,
             criterion = criterion,
@@ -43,7 +43,7 @@ class SkorchWrapper(NeuralNetClassifier):
 # 定义要优化的超参数空间
 param_distributions = {
     'lr': [0.01, 0.001, 0.0001],
-    'module__num_classes': [4],  # 如果您的类别数是固定的
+    'module__num_classes': [4],
     'module__layers': [[2, 2], [3, 3]],
     'module__kernel_n': [16, 32],
     'module__kernel_s': [3, 5],
@@ -61,7 +61,7 @@ net = SkorchWrapper(
     criterion = torch.nn.CrossEntropyLoss,
     optimizer = torch.optim.Adam,
     iterator_train__shuffle = True,
-    device = device  # 'cuda' or 'cpu'
+    device = device
 )
 
 # 创建 RandomizedSearchCV 实例
